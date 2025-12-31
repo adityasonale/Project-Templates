@@ -1,7 +1,5 @@
 """
 Data handling classes
-Depends on: config (for configuration)
-Does NOT depend on: models, trainer
 """
 from torch.utils.data import Dataset, DataLoader
 from typing import Optional, Callable
@@ -13,7 +11,6 @@ from .config import BaseConfig
 class BaseDataset(Dataset, ABC):
     """
     Abstract base dataset
-    NO dependencies on models or trainer
     """
     
     def __init__(self, data_path: Path, transform: Optional[Callable] = None):

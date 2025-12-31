@@ -19,7 +19,6 @@ plt.rcParams['figure.dpi'] = 100
 class Visualizer:
     """
     Handles all visualization tasks
-    Can be used standalone or integrated with Trainer
     """
     
     def __init__(self, save_dir: Path = Path('visualizations')):
